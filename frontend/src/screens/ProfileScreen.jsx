@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useUpdateUserMutation } from '../slices/usersApiSlice'
 import { setCredentials } from '../slices/authSlice'
 import { toast } from 'react-toastify'
-import Loader from '../components/loader'
+import Loader from '../components/Loader'
 
 const ProfileScreen = () => {
   const [name, setName] = useState('')
