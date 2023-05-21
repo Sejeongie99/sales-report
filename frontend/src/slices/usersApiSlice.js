@@ -1,6 +1,6 @@
 import { apiSlice } from './apiSlice'
 
-const USER_URL = 'https://sales-report-um9k.onrender.com/api/users'
+const USER_URL = '/api/users'
 
 export const usersApiSlice = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
