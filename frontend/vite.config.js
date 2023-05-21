@@ -9,7 +9,7 @@ export default defineConfig({
     proxy: {
       '/api': {
         // target: 'http://localhost:5000',
-        target: 'https://sales-report-um9k.onrender.com',
+        target: 'https://sales-report-um9k.onrender.com/api',
         changeOrigin: true,
         secure: false,
       },
