@@ -30,9 +30,6 @@ app.use(express.urlencoded({ extended: true }))
 //cookie parser
 app.use(cookieParser())
 
-//api routes uses
-app.use('/api/users', userRoutes)
-
 // if (process.env.NODE_ENV === 'production') {
 //   const __dirname = path.resolve()
 //   app.use(express.static(path.join(__dirname, 'frontend/dist')))
@@ -45,6 +42,9 @@ app.use('/api/users', userRoutes)
 // }
 
 app.get('/', (req, res) => res.send('Server is ready'))
+
+//api routes uses
+app.use('/api/users', userRoutes)
 
 //error middleware handling uses
 app.use(notFound)
