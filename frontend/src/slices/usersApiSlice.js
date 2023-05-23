@@ -8,7 +8,7 @@ export const usersApiSlice = apiSlice.injectEndpoints({
       query: (data) => ({
         url: `${USER_URL}/auth`,
         method: 'POST',
-        credentials: 'same-origin',
+        credentials: 'include',
         body: data,
       }),
     }),
@@ -16,7 +16,7 @@ export const usersApiSlice = apiSlice.injectEndpoints({
       query: (data) => ({
         url: `${USER_URL}`,
         method: 'POST',
-        credentials: 'same-origin',
+        credentials: 'include',
         body: data,
       }),
     }),
