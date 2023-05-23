@@ -8,8 +8,8 @@ const generateToken = (res, userId) => {
 
   // saves token in cookies
   res.cookie('accessToken', token, {
-    httpOnly: true,
-    // secure: process.env.NODE_ENV !== 'development',
+    httpOnly: false,
+    secure: process.env.NODE_ENV !== 'development',
     samesite: 'strict',
     maxAge: 60 * 60 * 1000,
   })
