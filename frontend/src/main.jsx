@@ -16,6 +16,7 @@ import HomeScreen from './screens/HomeScreen.jsx'
 import LoginScreen from './screens/LoginScreen.jsx'
 import RegisterScreen from './screens/RegisterScreen.jsx'
 import ProfileScreen from './screens/ProfileScreen'
+import PdfScreen from './screens/PdfScreen/PdfScreen'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -26,6 +27,7 @@ const router = createBrowserRouter(
       <Route path='' element={<PrivateRoute />}>
         <Route path='/profile' element={<ProfileScreen />}></Route>
       </Route>
+      <Route path='/pdf' element={<PdfScreen />}></Route>
     </Route>
   )
 )
